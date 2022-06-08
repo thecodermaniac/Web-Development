@@ -1,0 +1,40 @@
+.main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.sub{
+    background-color: aqua;
+    width: auto;
+    color: aliceblue;
+}
+
+.textHeading{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    color: rgb(0, 174, 255);
+    font-size: 20px;
+    font-family: 'Goudy Stout Regular';
+}
+
+#img_1{
+	width: 100%;
+	height:300px;
+	object-fit: cover;
+	object-position: 20% 85%;
+}
+img{
+    width: 300px;
+    height:400px;
+    object-fit: cover;
+    object-position: 90% 50%;
+}
+.imgContainer{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    justify-content: space-evenly;
+}

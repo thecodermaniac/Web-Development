@@ -1,0 +1,58 @@
+body{
+    background: linear-gradient(45deg,rgb(2, 34, 58),rgb(10, 138, 224));
+    color: whitesmoke;
+}
+
+
+header{
+    margin-top: 20px;
+}
+
+nav{
+    position: absolute;
+    top: 40px;
+    right: 45px;
+    width: 40px;
+}
+nav span{
+    height: 3px;
+    background-color: aliceblue;
+    display:block;
+    margin: 3px 0;
+}
+.main{
+    height: 100%;
+    max-width: 100%;
+    margin-top: 50px;
+}
+h1{
+    margin-top: 50px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 392px;
+    margin-top: 70px;
+}
+
+.cards .card-items {
+    width: calc(50%-13px);
+    height: 139px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgb(50, 49, 49);
+    color: #f6641b;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    border: 3px solid #1af0ff;
+    box-shadow: 0 0 9px #05364c;
+}
+.form{
+    margin: 50px 0 0 0;
+    
+}

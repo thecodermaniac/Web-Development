@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-shopping</title>
+    <link rel="stylesheet" href="prac_5.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="navItems">
+        <li><span></span><span></span><span></span></li>
+        <li id="addbtn">Add Products</li>
+        <li id="showbtn">Show Products</li>
+      </ul>
+    </nav>
+    <div id="ProductsForm">
+      <form method="get" class="form">
+        <label id="formLabel">Products Name</label>
+        <input type="text" id="pdtName" class="inputeve" />
+        <label id="formLabel">Product Description</label>
+        <textarea id="description"></textarea>
+        <label id="formLabel">Image Url</label>
+        <input type="text" id="pdtUrl" class="inputeve" />
+        <input type="submit" class="submitBtn" value="Add Product" />
+      </form>
+      <div class="readyList"></div>
+    </div>
+    <div id="ProductList">
+      Product List
+      <div class="mainList">
+        <div class="empty">Opps! Empty</div>
+      </div>
+    </div>
+  </body>
+  <script src="prac_5.js"></script>
+</html>

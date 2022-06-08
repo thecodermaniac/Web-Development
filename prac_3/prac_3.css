@@ -1,0 +1,36 @@
+nav{
+    height: 50px;
+    background-color: rgb(153, 0, 203);
+    border-radius: 10px 10px 0 0;
+    border: 4px solid rgb(153, 0, 203);
+    border-bottom: 0;
+}
+.row{
+    background: linear-gradient(360deg, rgb(124, 3, 194) ,rgb(244, 193, 255));
+
+}
+.col{
+    display: flex;
+}
+#inputSelector{
+    width: 30%;
+    padding: 8px;
+    margin: 0;
+}
+#labelValue{
+    padding: 8px;
+    width: 70%;
+    margin: 0;
+}
+
+#createBtn{
+    width: 22%;
+    padding: 5px;
+    margin-top: 20px;
+}
+.newElement{
+    color:aliceblue;
+    padding: 8px;
+    width: 70%;
+    margin-top: 10px;
+}

@@ -1,0 +1,70 @@
+.header {
+  position: absolute;
+  height: 120px;
+  left: 0px;
+  top: 0px;
+
+  background: #c75959;
+}
+
+nav {
+  display: flex;
+}
+
+.image_land {
+  position: absolute;
+  width: 100%;
+  height: 768px;
+  left: 0px;
+  top: 120px;
+
+  background: #f1f1f1;
+}
+
+li {
+  position: absolute;
+  width: 63px;
+  height: 19px;
+  left: 801px;
+  top: 50px;
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #3a3a3a;
+}
+
+.head_1 {
+  position: relative;
+  width: 131px;
+  height: 27px;
+  left: 358px;
+  top: 228px;
+
+  font-family: "Roboto-Bold";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+
+  color: #b8b8b8;
+}
+
+.head_2 {
+  position: relative;
+  width: 657px;
+  height: 145px;
+  left: 358px;
+  top: 270px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 65px;
+  line-height: 76px;
+
+  color: #333333;
+}

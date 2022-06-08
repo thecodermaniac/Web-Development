@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(43, 139, 235);
+    font-family: sans-serif;
+}
+.Product{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 240px;
+    height: 340px;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    
+    border-radius: 10px;
+}
+.Product .imgbox{
+    height: 100%;
+}
+.Product .imgbox img{
+    display: block;
+    width: 90%;
+    margin: 20px auto 0;
+    background: #fff;
+}
+.details{
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0;
+    bottom: -104px;
+    box-shadow: 0 34px 20px rgba(0, 0, 0, 0.283);
+    transition: 0.5s;
+}
+.details h2{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: medium;
+}
+.details h2 span{
+    font-size: 12px;
+    color: rgb(155, 154, 154);
+    font-weight: normal;
+}
+
+.details .price{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(71, 115, 198);
+}
+label{
+    display: block;
+    margin-top: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.details button{
+    display: block;
+    padding: 5px;
+    color: #fff;
+    margin: 15px 0 0;
+    background-color: rgb(71, 115, 198); 
+    text-align: center;
+    width: 100%;
+}
+button:hover{
+    background-color: rgb(50, 80, 135);
+}

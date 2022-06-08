@@ -1,0 +1,136 @@
+.navItems li{
+    list-style: none;
+    display: inline-block;
+    color: rgb(232, 253, 255);
+    margin-right: 20px;
+    margin-left: 0;
+    font-size: larger;
+    margin-top: 9px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ul{
+    padding-left: 18px;
+    margin: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    margin: 0;
+    height: 44px;
+    background: rgb(47, 47, 47);
+}
+span{
+    height: 3px;
+    background-color: rgb(254, 153, 37);
+    display:block;
+    margin-top: 3px;
+    margin-right: 20px;
+    margin-left: 0;
+    width: 40px;
+}
+#ProductsForm{
+    display:none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* width: 30%; */
+}
+#ProductList{
+    display: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#formLabel{
+    display: inline-block;
+    font-size: large;
+    margin-top: 10px;
+}
+
+.inputeve{
+    display: block;
+    height: 30px;
+    width: 70%;
+    margin-top: 30px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 3%;
+    width: 25%;
+}
+
+#description{
+    width: 70%;
+    height: 100px;
+    margin-top: 20px;
+}
+.submitBtn{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    align-self: flex-start;
+    margin-top: 20px;
+    background: black;
+    color: rgb(179, 245, 241);
+    padding: 4px;
+    border-radius: 4px;
+}
+.mainList {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.empty {
+    display: flex;
+    margin-top: 50px;
+    border: 2px solid rgb(49, 49, 49);
+    font-size: medium;
+    opacity: 70%;
+    background: rgb(76, 76, 76);
+    height: 56px;
+    width: 50%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    margin: 0;
+    width: 191px;
+    height: 204.33px;
+    object-fit: cover;
+    object-position: 20% 85%;
+}
+.pdtLists{
+    display: flex;
+    flex-direction: column;
+   
+}
+.shownList{
+    display: inline-block;
+    font-size: large;
+    margin-top: 10px;
+}
+.describe{
+    margin-top: 10px;
+}
+
+.readyList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.cardView{
+    display: flex;
+    flex-direction: column;
+}
+.AddCart{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    align-self: flex-start;
+    margin-top: 20px;
+    background: black;
+    color: rgb(179, 245, 241);
+    padding: 4px;
+    border-radius: 4px;
+}
