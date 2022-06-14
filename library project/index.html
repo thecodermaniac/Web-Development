@@ -1,35 +1,68 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Navbar</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <a class="logo" href="/"><img src="Library Logo.png" alt="logo" class="imglogo"></a>
-            <nav>
-                <ul class="nav__links">
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-            <a class="cta" href="#">Contact</a>
-            <p class="menu cta">Menu</p>
-        </header>
-        <div class="overlay">
-            <a class="close">&times;</a>
-            <div class="overlay__content">
-                <a href="#">Services</a>
-                <a href="#">Projects</a>
-                <a href="#">About</a>
-            </div>
-        </div>
-        
-    </body>
-    <script src="script.js"></script>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Navbar</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="/"
+        ><img src="Library Logo.png" alt="logo" class="imglogo"
+      /></a>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#">Contact</a>
+      <p class="menu cta">Menu</p>
+    </header>
+    <form action="addBook" method="post" class="Add_book">
+      <label for="">Name</label><br />
+      <input
+        type="text"
+        placeholder="Book Name"
+        class="linetake"
+        id="formname"
+      /><br />
+      <label for="">Author</label><br />
+      <input
+        type="text"
+        placeholder="Author's name"
+        class="linetake"
+        id="formauthor"
+      /><br />
+      <label for="">Type</label><br />
+      <input type="radio" value="Fiction" name="type" id="fiction" />
+      <label for="">Fiction</label><br />
+      <input type="radio" value="Technology" name="type" id="technology" />
+      <label for="">Technology</label><br />
+      <input type="radio" value="Religious" name="type" id="religious" />
+      <label for="">Religious</label><br />
+      <button class="addbookbtn">Add Book</button>
+    </form>
+    <div class="BookTable">
+      <table>
+        <tr>
+          <th id="firsthead">Name</th>
+          <th id="sechead">Author</th>
+          <th id="trdhead">Type</th>
+        </tr>
+        <tbody id="tablecontent">
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>
