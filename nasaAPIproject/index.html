@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>A simple map</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <script src="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>Natural Disaster Tracker</header>
+    <span class="headings"> Click To Load Map</span><br>
+    <button id="mapload">Load Map</button><br />
+    <div>
+      <span class="headings"> Set Disaster Types :-</span><br>
+      <button id="wildfire">Wild Fires</button>
+      <button id="volcano">Volcano</button>
+      <button id="iceberg">Iceberg</button>
+    </div>
+    <div class="container">
+      <div id="map"></div>
+      <div id="loading_show"><h1>Loading</h1></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

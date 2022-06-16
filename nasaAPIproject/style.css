@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(249, 218, 179);
+}
+#map {
+  position: absolute;
+  top: 20%;
+  margin: auto;
+  height: 73%;
+  width: 56%;
+  border-radius: 5px;
+  border: 10px solid black;
+}
+.container{
+  display: flex;
+  justify-content: center;
+}
+header {
+  background-color: brown;
+  color: azure;
+  font-size: large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 6px;
+  height: 30px;
+  text-align: center;
+}
+
+.trigger {
+  background-color: rgba(8, 8, 8, 0.895);
+  color: aliceblue;
+  padding: 15px;
+  border-radius: 4px;
+  border: 0;
+  height: 120px;
+  width: auto;
+}
+.leaflet-popup-content {
+  background-color: transparent;
+  /* display: none; */
+  width: auto;
+  padding: 0;
+}
+.leaflet-popup-close-button {
+  background-color: aliceblue;
+}
+#wildfire{
+  color: brown;
+  height: 30px;
+  padding: 2px;
+  border-radius: 3px;
+  border: 0;
+  box-shadow: 5px 4px #918d8d;
+  margin: 5px;
+}
+#volcano{
+  color: brown;
+  height: 30px;
+  padding: 2px;
+  border-radius: 3px;
+  border: 0;
+  box-shadow: 5px 4px #918d8d;
+  margin: 5px;
+}
+
+#iceberg{
+  color: brown;
+  height: 30px;
+  padding: 2px;
+  border-radius: 3px;
+  border: 0;
+  box-shadow: 5px 4px #918d8d;
+  margin: 5px;
+}
+
+#mapload{
+  color: brown;
+  height: 30px;
+  padding: 2px;
+  border-radius: 3px;
+  border: 0;
+  box-shadow: 5px 4px #918d8d;
+  margin: 5px;
+}
+
+.headings{
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: brown;
+
+}
