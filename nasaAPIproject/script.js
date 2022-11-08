@@ -1,9 +1,7 @@
 //map js beware
-var loadmapbtn = document.getElementById('mapload')
 var map = null
 
-loadmapbtn.addEventListener('click', loadmap)
-function loadmap() {
+window.onload = function () {
   L.mapbox.accessToken =
     "pk.eyJ1IjoiYXJpdHJheHpvZCIsImEiOiJjbDRmeHgyenQwN3U1M2ltYndjM3NsaTF1In0.DQtk0vwbl6NOuUVCrwpmzw";
   map = L.mapbox
@@ -25,15 +23,17 @@ function loadmap() {
 
 
 
+
 //html elements
 const loading = document.getElementById('loading_show')
 const map_div = document.getElementById('map')
+var spinner = document.getElementById('spinner')
+spinner.style.display = 'none'
 var Wildfiresbtn = document.getElementById('wildfire')
 var volcanobtn = document.getElementById('volcano')
 var icebergbtn = document.getElementById('iceberg')
 
 Wildfiresbtn.addEventListener('click', showwildfire)
-loading.style.display = 'none'
 
 volcanobtn.addEventListener('click', showVolcano)
 
@@ -43,17 +43,16 @@ icebergbtn.addEventListener('click', showiceberg)
 function showwildfire() {
   console.log('pressed wildfire button')
   const xhr = new XMLHttpRequest()
+  spinner.style.display = 'flex';
   xhr.open('GET', 'https://eonet.gsfc.nasa.gov/api/v3/events', true)
 
   xhr.onprogress = function () {
-    map_div.style.display = 'none'
-    loading.style.display = 'block'
+
   }
 
   xhr.onload = function () {
-    loading.style.display = 'none'
-    map_div.style.display = 'block'
     if (this.status === 200) {
+      spinner.style.display = 'none'
       let obj = JSON.parse(this.responseText)
       for (key in obj['events']) {
         if (obj['events'][key].categories[0].title == 'Wildfires') {
@@ -95,17 +94,16 @@ function showwildfire() {
 }
 function showVolcano() {
   const xhrVolcano = new XMLHttpRequest()
+  spinner.style.display = 'flex';
   xhrVolcano.open('GET', 'https://eonet.gsfc.nasa.gov/api/v3/events', true)
 
   xhrVolcano.onprogress = function () {
-    map_div.style.display = 'none'
-    loading.style.display = 'block'
+
   }
 
   xhrVolcano.onload = function () {
-    loading.style.display = 'none'
-    map_div.style.display = 'block'
     if (this.status === 200) {
+      spinner.style.display = 'none'
       let obj = JSON.parse(this.responseText)
       for (key in obj['events']) {
         if (obj['events'][key].categories[0].title == 'Volcanoes') {
@@ -149,17 +147,16 @@ function showVolcano() {
 
 function showiceberg() {
   const xhrIceberg = new XMLHttpRequest()
+  spinner.style.display = 'flex';
   xhrIceberg.open('GET', 'https://eonet.gsfc.nasa.gov/api/v3/events', true)
 
   xhrIceberg.onprogress = function () {
-    map_div.style.display = 'none'
-    loading.style.display = 'block'
+
   }
 
   xhrIceberg.onload = function () {
-    loading.style.display = 'none'
-    map_div.style.display = 'block'
     if (this.status === 200) {
+      spinner.style.display = 'none'
       let obj = JSON.parse(this.responseText)
       for (key in obj['events']) {
         if (obj['events'][key].categories[0].title == 'Sea and Lake Ice') {
