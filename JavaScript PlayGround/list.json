@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Aritra",
+        "age": 12,
+        "school": "TIGPS",
+        "subject": "Maths",
+        "hobby": "Football"
+    },
+    {
+        "name": "Subham",
+        "age": 16,
+        "school": "DPS",
+        "subject": "English",
+        "hobby": "Cricket"
+    },
+    {
+        "name": "Jitendra",
+        "age": 15,
+        "school": "TIGPS",
+        "subject": "History",
+        "hobby": "Tennis"
+    },
+    {
+        "name": "Anamika",
+        "age": 11,
+        "school": "DPS",
+        "subject": "English",
+        "hobby": "Chess"
+    },
+    {
+        "name": "Rakesh",
+        "age": 16,
+        "school": "SSJ",
+        "subject": "Science",
+        "hobby": "Football"
+    },
+    {
+        "name": "Ritwiik",
+        "age": 13,
+        "school": "DPS",
+        "subject": "Maths",
+        "hobby": "Cricket"
+    },
+    {
+        "name": "Shreya",
+        "age": 12,
+        "school": "SSJ",
+        "subject": "Maths",
+        "hobby": "Batminton"
+    },
+    {
+        "name": "Sumedha",
+        "age": 11,
+        "school": "DPS",
+        "subject": "Hindi",
+        "hobby": "Batminton"
+    }
+]

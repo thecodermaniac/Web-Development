@@ -2,10 +2,10 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Display a globe on a webpage</title>
+<title>Display a map on a webpage</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-<link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
-<script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
 <style>
 body { margin: 0; padding: 0; }
 #map { position: absolute; top: 0; bottom: 0; width: 100%; }
@@ -13,21 +13,14 @@ body { margin: 0; padding: 0; }
 </head>
 <body>
 <div id="map"></div>
-
 <script>
-	mapboxgl.accessToken = 'pk.eyJ1IjoiYXJpdHJheHpvZCIsImEiOiJjbDRmeHgyenQwN3U1M2ltYndjM3NsaTF1In0.DQtk0vwbl6NOuUVCrwpmzw';
+	mapboxgl.accessToken = 'pk.eyJ1IjoiYXJpdHJheHpvZCIsImEiOiJjbGdxYnN1OGYwb2V6M2ltcm9uaHUzdmw4In0.QSulymOfnZ17b0U6Lt3YmA';
     const map = new mapboxgl.Map({
-        container: 'map',
+        container: 'map', // container ID
         // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
-        style: 'mapbox://styles/mapbox/satellite-streets-v11',
-        zoom: 1.5,
-        center: [30, 50],
-        projection: 'globe'
-    });
-
-    map.on('load', () => {
-        // Set the default atmosphere style
-        map.setFog({});
+        style: 'mapbox://styles/mapbox/streets-v12', // style URL
+        center: [-74.5, 40], // starting position [lng, lat]
+        zoom: 9 // starting zoom
     });
 </script>
 
